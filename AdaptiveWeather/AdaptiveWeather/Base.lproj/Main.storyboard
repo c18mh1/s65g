@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcd-vE-sPi" userLabel="TextContainer">
+                                <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAq-gu-js7">
+                                        <rect key="frame" x="-7" y="46" width="614" height="179"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bv0-z8-Ina">
+                                        <rect key="frame" x="73" y="54" width="454" height="299"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="250"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BAq-gu-js7" firstAttribute="top" secondItem="Lcd-vE-sPi" secondAttribute="top" constant="46" id="UVG-60-DsZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="BAq-gu-js7" secondAttribute="centerX" id="hfN-aV-CfI"/>
+                                    <constraint firstAttribute="bottom" secondItem="bv0-z8-Ina" secondAttribute="bottom" constant="10" id="kKa-Cc-lQz"/>
+                                    <constraint firstAttribute="centerX" secondItem="bv0-z8-Ina" secondAttribute="centerX" id="toM-pM-ESt"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_small" translatesAutoresizingMaskIntoConstraints="NO" id="X6y-uP-Xwu">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                                <color key="backgroundColor" red="0.34952605539149861" green="0.64014199545659567" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.34952605539999998" green="0.64014199549999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lcd-vE-sPi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Stj-16-1GF"/>
+                            <constraint firstItem="X6y-uP-Xwu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Swp-77-zPq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lcd-vE-sPi" secondAttribute="bottom" id="XVb-ts-Uvv"/>
+                            <constraint firstItem="Lcd-vE-sPi" firstAttribute="top" secondItem="X6y-uP-Xwu" secondAttribute="bottom" constant="20" id="dUI-fk-a2Q"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="X6y-uP-Xwu" secondAttribute="height" multiplier="0.4" id="hn1-d7-oa6"/>
+                            <constraint firstAttribute="trailing" secondItem="Lcd-vE-sPi" secondAttribute="trailing" id="nNK-D9-yXp"/>
+                            <constraint firstAttribute="centerX" secondItem="X6y-uP-Xwu" secondAttribute="centerX" id="zAU-fv-rWp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud_small" width="300" height="197"/>
+    </resources>
+</document>
