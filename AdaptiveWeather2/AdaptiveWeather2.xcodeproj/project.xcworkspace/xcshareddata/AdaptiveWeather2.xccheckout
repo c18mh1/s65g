@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>157B4419-611D-4015-91A2-2257BB8537C9</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>AdaptiveWeather2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>06FD728D9EFB974A7E45D940FFECCCB81CCFF0B3</key>
 		<string>https://github.com/c18mh1/s65g.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AdaptiveWeather2/AdaptiveWeather2.xcodeproj/project.xcworkspace</string>
+	<string>AdaptiveWeather2/AdaptiveWeather2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>06FD728D9EFB974A7E45D940FFECCCB81CCFF0B3</key>

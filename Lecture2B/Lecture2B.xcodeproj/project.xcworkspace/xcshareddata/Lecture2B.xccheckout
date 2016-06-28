@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>16439D77-2B7B-40E6-95A6-3167CE3C1271</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Lecture2B</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>06FD728D9EFB974A7E45D940FFECCCB81CCFF0B3</key>
 		<string>https://github.com/c18mh1/s65g.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Lecture2B/Lecture2B.xcodeproj/project.xcworkspace</string>
+	<string>Lecture2B/Lecture2B.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>06FD728D9EFB974A7E45D940FFECCCB81CCFF0B3</key>

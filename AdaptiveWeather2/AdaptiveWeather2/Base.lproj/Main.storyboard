@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-ZE-R35">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-ZE-R35">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXD-a1-4fl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXD-a1-4fl">
                                         <rect key="frame" x="73" y="54" width="454" height="299"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="250"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,7 +51,7 @@
                                     <rect key="frame" x="300" y="20" width="300" height="380"/>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_small" translatesAutoresizingMaskIntoConstraints="NO" id="bcU-dI-Woc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloud_small" translatesAutoresizingMaskIntoConstraints="NO" id="bcU-dI-Woc">
                                 <rect key="frame" x="150" y="20" width="300" height="197"/>
                             </imageView>
                         </subviews>
@@ -74,25 +74,25 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="9hq-mf-fbV"/>
-                                <exclude reference="umu-eg-VhI"/>
                                 <exclude reference="N3k-vg-DLI"/>
                                 <exclude reference="ZKf-Tl-dKT"/>
                                 <exclude reference="eul-Gd-hmo"/>
+                                <exclude reference="9hq-mf-fbV"/>
+                                <exclude reference="umu-eg-VhI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="9hq-mf-fbV"/>
-                                <exclude reference="Aiv-dI-VyD"/>
-                                <exclude reference="OQh-WO-1iZ"/>
-                                <exclude reference="umu-eg-VhI"/>
                                 <exclude reference="3di-Ep-1Dx"/>
                                 <include reference="N3k-vg-DLI"/>
                                 <include reference="ZKf-Tl-dKT"/>
                                 <exclude reference="ce2-5l-Jm1"/>
                                 <include reference="eul-Gd-hmo"/>
                                 <exclude reference="lB6-qM-4DR"/>
+                                <include reference="9hq-mf-fbV"/>
+                                <exclude reference="Aiv-dI-VyD"/>
+                                <exclude reference="OQh-WO-1iZ"/>
+                                <exclude reference="umu-eg-VhI"/>
                             </mask>
                         </variation>
                     </view>
