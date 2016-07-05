@@ -134,3 +134,28 @@ if let n = optionalN {
 //Int! is the same type as Int whereas Int? is not the same type as Int
 
 doubler(implicitOptionalN)
+
+
+//LECTURE FOUR 
+
+//enum + optional
+enum OurOptional {
+    case None
+    case Some(Int)
+}
+var myOpt = OurOptional.Some(47)
+myOpt = .Nil
+
+var myString: String? = "a string"
+myString - Optional.None
+var myOtherString.Optional<String>
+myString.characters //myString is not a string, it is an optional parameterized by the String type and may or may not have value
+
+//enum + raw values
+enum LuckyNumbers: Int {
+    case TwentySeven = 27
+    case ThirtyTwo = 32
+}
+
+LuckyNumbers.TwentySeven.rawValue
+
