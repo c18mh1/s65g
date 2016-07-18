@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Assignment3
 //
-//  Created by Summer on 7/8/16.
-//  Copyright (c) 2016 Michelle. All rights reserved.
+//  Created by Michelle on 7/17/16.
+//  Copyright © 2016 Michelle. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?  
+    var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../GridView.swift">
-   </FileRef>
-   <FileRef
       location = "self:Assignment3.xcodeproj">
    </FileRef>
 </Workspace>

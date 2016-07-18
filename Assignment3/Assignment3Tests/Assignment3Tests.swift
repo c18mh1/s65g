@@ -2,12 +2,12 @@
 //  Assignment3Tests.swift
 //  Assignment3Tests
 //
-//  Created by Summer on 7/8/16.
-//  Copyright (c) 2016 Michelle. All rights reserved.
+//  Created by Michelle on 7/17/16.
+//  Copyright © 2016 Michelle. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import Assignment3
 
 class Assignment3Tests: XCTestCase {
     
@@ -23,12 +23,12 @@ class Assignment3Tests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
