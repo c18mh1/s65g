@@ -14,7 +14,7 @@ protocol GridProtocol
     var rows: Int {get}
     var cols: Int {get}
     func neighbors (row: Int, col: Int) -> [(Int, Int)]
-    subscript(row: Int, column: Int) -> CellState? {get set}
+    subscript(row: Int, column: Int) -> CellState {get set}
 }
 
 

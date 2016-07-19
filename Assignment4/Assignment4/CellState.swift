@@ -17,4 +17,29 @@ enum CellState: String
     case Born = "Born"
     case Died = "Died"
     
+    var description : String
+    {
+        return self.rawValue
+    }
+    
+    func toggle(value: CellState) -> CellState
+    {
+        switch value
+        {
+        case .Empty:
+            return .Living
+            
+        case .Died:
+            return .Living
+            
+        case .Living:
+            return .Empty
+            
+        case .Born:
+            return .Empty
+        }
+    }
+
+    
 }
+

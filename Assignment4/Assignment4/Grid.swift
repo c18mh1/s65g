@@ -21,14 +21,15 @@ class Grid: GridProtocol
         self.grid = [[]]
     }
     
-    subscript(row: Int, col: Int) -> CellState?
+    subscript(row: Int, col: Int) -> CellState
         {
         get {
+            assert(row >= 0 && row < rows && col >= 0 && col < cols, "Bounds error")
             return grid[row][col]
         }
         
         set {
-            grid[row][col] = grid[row][col]
+            grid[row][col] = newValue
         }
     }
     

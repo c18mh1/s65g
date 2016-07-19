@@ -15,13 +15,13 @@ class Problem2ViewController: UIViewController {
     
     @IBAction func buttonClicked(sender: AnyObject) {
         
-        print("We were clicked")
+        print("We were clicked", terminator: "")
         
         //randomly generates a state
         func returnState() -> Bool
         {
             var state:Bool = true;
-            var x:Int = Int(arc4random_uniform(UInt32(2)))
+            let x:Int = Int(arc4random_uniform(UInt32(2)))
             if (x == 0)
             {
                 //0 = dead
@@ -112,7 +112,7 @@ class Problem2ViewController: UIViewController {
         {
             for var y = 0; y <= before[x].count-1; y++
             {
-                var neighbors: Int = returnNeighbors(x,y)
+                let neighbors: Int = returnNeighbors(x,y: y)
                 
                 //if cell is alive
                 if(before[x][y] == true)

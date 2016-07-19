@@ -31,10 +31,11 @@ class SimulationViewController: UIViewController, EngineDelegate {
     {
     
         //UIButton which steps the delegate
-        StandardEngine(rows: 20, cols: 20).step(StandardEngine(rows:20, cols:20).delegate as! [[CellState]])
+        StandardEngine(rows: 10, cols: 10).step(StandardEngine(rows:10, cols:10).delegate as! GridProtocol)
         
         //invoke the step() method - singleton - when step button pressed
-       StandardEngine(rows: 20, cols: 20).step(StandardEngine.EngineSingleton as! [[CellState]])
+        StandardEngine(rows: 10, cols: 10).step(Grid(rows: 10, cols: 10) as GridProtocol)
+        
     }
     
     func engineDidUpdate(withGrid: GridProtocol)

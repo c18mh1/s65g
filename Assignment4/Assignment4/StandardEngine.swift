@@ -44,17 +44,17 @@ class StandardEngine: EngineProtocol
         self.grid = Grid(rows: 10, cols: 10)
     }
  
-    func step(before: [[CellState]]) -> GridProtocol
+    func step(before: GridProtocol) -> GridProtocol
     {
-        var after: [[CellState]] = [[]]
+        var after: GridProtocol
+        after = Grid(rows: before.rows, cols: before.cols)
         
-        for x in 0..<before.count
+        for row in 0..<before.rows
         {
-            for y in 0..<before[x].count
+            for col in 0..<before.cols
             {
-                let gridClass = Grid(rows: x, cols: y)
-                let neighborsFunction = gridClass.neighbors(x, col: y)
-                
+                let gridClass = Grid(rows: row, cols: col)
+                let neighborsFunction = gridClass.neighbors(row, col: col)
                 var neighborArray: [(Int, Int)] = neighborsFunction
                 
                 for i in 0..<neighborArray.count
@@ -64,44 +64,47 @@ class StandardEngine: EngineProtocol
                     
                     var live = 0;
                     
-                    //count alive neighbors
-                    if(before[xcor][ycor] == .Living)
+                    if (before[xcor, ycor] == .Living)
                     {
                         live = live + 1
                     }
-                    
-                    //if alive
-                    if(before[x][y] == .Living)
+                
+                
+                let currentCell = before[row, col]
+                
+                if (currentCell == .Living || currentCell == .Born)
+                {
+                    if live < 2
                     {
-                        if(live<2)
-                        {
-                            after[x][y] = .Died
-                        }
-                            
-                        else if (live == 2 || live==3)
-                        {
-                            after[x][y] = .Born
-                        }
-                            
-                        else if (live>3)
-                        {
-                            after[x][y] = .Died
-                        }
-                    }//if alive
-                        
-                    else if (before[x][y] == .Empty)
-                    {
-                        if (live == 3)
-                        {
-                            after[x][y] = .Born
-                        }
+                        after[row,col] = .Died
                     }
+                    
+                    else if (live == 2 || live == 3)
+                    {
+                        after[row, col] = .Born
+                    }
+                    
+                    else if (live > 3)
+                    {
+                        after[row, col] = .Died
+                    }
+                    
+                }
+                    
+                else if (currentCell == .Died || currentCell == .Empty)
+                {
+                    if live == 3
+                    {
+                        after[row, col] = .Born
+                    }
+                }
+                
                 }
             }
         }
-
-        return after as! GridProtocol
-    }
+        
+        return after
+    }//step
 
     //singleton, http://krakendev.io/blog/the-right-way-to-write-a-singleton
     //creates a grid of size 10x10 by default

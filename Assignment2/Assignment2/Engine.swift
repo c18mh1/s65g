@@ -78,7 +78,7 @@ class Engine: UIViewController {
         {
             for var y = 0; y <= before[x].count-1; y++
             {
-                var neighbors: Int = returnNeighbors(x,y)
+                let neighbors: Int = returnNeighbors(x,y: y)
                 
                 //if cell is alive
                 if(before[x][y] == true)
@@ -98,7 +98,7 @@ class Engine: UIViewController {
                         after[x][y] = false;
                         
                     default:
-                        var m: Bool = before[x][y]
+                        let m: Bool = before[x][y]
                          after[x][y] = m
                         
                     } //switch
@@ -115,7 +115,7 @@ class Engine: UIViewController {
                         after[x][y] = true;
                         
                     default:
-                        var m: Bool = before[x][y]
+                        let m: Bool = before[x][y]
                         after[x][y] = m
                         
                     }

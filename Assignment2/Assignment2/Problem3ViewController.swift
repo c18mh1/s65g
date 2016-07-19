@@ -15,7 +15,7 @@ class Problem3ViewController: UIViewController {
     
     @IBAction func buttonClicked(sender: AnyObject) {
         
-        print("We were clicked")
+        print("We were clicked", terminator: "")
         textView.text = "Button was clicked."
     }
     override func viewDidLoad() {

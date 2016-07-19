@@ -17,7 +17,7 @@ protocol EngineProtocol
     var rows: Int {get set}
     var cols: Int {get set}
     init(rows: Int, cols: Int)
-    func step(before: [[CellState]]) -> GridProtocol
+    func step(before: GridProtocol) -> GridProtocol
 }
 
 //default refreshRate to zero 
