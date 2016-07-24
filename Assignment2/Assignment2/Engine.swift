@@ -20,7 +20,7 @@ class Engine: UIViewController {
             var aliveNeighbors: Int = 0;
             
             var aliveCount: Int = 0;
-            for var i = 0; i <= before.count - 1; i++
+            for var i = 0; i <= before.count - 1; i += 1
             {
                 for var j = 0; j <= before[i].count - 1; j++
                 {
