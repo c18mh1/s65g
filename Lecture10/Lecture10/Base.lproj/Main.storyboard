@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lecture10" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOT-yU-pYG">
+                                <rect key="frame" x="277" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Il3-9e-Ijj"/>
+                                    <constraint firstAttribute="height" constant="30" id="kNe-po-rvS"/>
+                                </constraints>
+                                <state key="normal" title="Fetch"/>
+                                <connections>
+                                    <action selector="fetch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XrF-Pp-hxo"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d2o-eL-H24">
+                                <rect key="frame" x="25" y="58" width="555" height="504"/>
+                                <color key="backgroundColor" red="0.96808191535776611" green="0.96808191535776611" blue="0.96808191535776611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lOT-yU-pYG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0cX-Re-9pP"/>
+                            <constraint firstItem="d2o-eL-H24" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GjY-G0-Tdb"/>
+                            <constraint firstItem="d2o-eL-H24" firstAttribute="top" secondItem="lOT-yU-pYG" secondAttribute="bottom" constant="8" id="QK0-Gq-JuL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d2o-eL-H24" secondAttribute="bottom" constant="38" id="jYG-Kv-uNO"/>
+                            <constraint firstItem="lOT-yU-pYG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jma-fw-E5R"/>
+                            <constraint firstItem="lOT-yU-pYG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-265" id="t0T-y6-YnX"/>
+                            <constraint firstItem="d2o-eL-H24" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="zD2-Vm-EDX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="d2o-eL-H24" id="Vj4-OG-YRt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="352"/>
+        </scene>
+    </scenes>
+</document>

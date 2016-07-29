@@ -9,8 +9,8 @@ func isLeap (year: Int) -> Bool
     return year%4 != 0 ? false : year%100 != 0 ? true : year%400 != 0 ? false : true
 }
 
-let months = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
+let months = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 func julianDate (year: Int, month: Int, day: Int) -> Int
 {
     let yearDays = ((1900..<year).map({isLeap($0) == true ? 366 : 365})).reduce(0, combine: +)

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Instrumentation-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" userLabel="Instrumentation" customClass="InstrumentationViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-k7-BuJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.16342618489999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rows:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rxD-J7-KzI" userLabel="Rows Text Field">
+                                <rect key="frame" x="252" y="148" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="0bX-ak-fTp"/>
+                                    <constraint firstAttribute="height" constant="30" id="66t-ZC-n3H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Puk-BA-cnd" userLabel="Rows Stepper">
+                                <rect key="frame" x="253" y="186" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="HfN-fc-P39"/>
+                                    <constraint firstAttribute="width" constant="94" id="cgK-UH-Ls0"/>
+                                </constraints>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Columns:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzE-AU-XjM" userLabel="Columns Text Field">
+                                <rect key="frame" x="252" y="223" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="IKH-Sf-IaW"/>
+                                    <constraint firstAttribute="height" constant="30" id="TL0-mE-RVy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1JI-Va-yoS" userLabel="Columns Stepper">
+                                <rect key="frame" x="252" y="261" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="BI5-FG-ltF"/>
+                                    <constraint firstAttribute="width" constant="94" id="sm3-ko-F7M"/>
+                                </constraints>
+                            </stepper>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SL8-LR-Uf5">
+                                <rect key="frame" x="242" y="298" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="5Zx-TU-n3z"/>
+                                    <constraint firstAttribute="height" constant="30" id="Gsg-5X-MHy"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refresh Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMk-Pe-aoh">
+                                <rect key="frame" x="250" y="331" width="100" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Cxe-D0-Ndn"/>
+                                    <constraint firstAttribute="height" constant="29" id="uFU-q4-tY5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y69-ZT-Rqv" userLabel="Timer Switch">
+                                <rect key="frame" x="275" y="368" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBn-e4-3cp" userLabel="Timer Label">
+                                <rect key="frame" x="278" y="408" width="46" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="ARg-gS-rcv"/>
+                                    <constraint firstAttribute="height" constant="21" id="bQC-sf-9E3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pMk-Pe-aoh" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="45.5" id="3gd-Eh-u0H"/>
+                            <constraint firstItem="rxD-J7-KzI" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="7YJ-vE-wve"/>
+                            <constraint firstItem="pzE-AU-XjM" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="9mk-qu-Dun"/>
+                            <constraint firstItem="pzE-AU-XjM" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-62" id="BZr-8w-wpf"/>
+                            <constraint firstItem="qsc-k7-BuJ" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="EAl-dk-fbQ"/>
+                            <constraint firstItem="qsc-k7-BuJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Etp-L4-ygn"/>
+                            <constraint firstItem="Puk-BA-cnd" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-99.5" id="USa-a3-TW2"/>
+                            <constraint firstAttribute="trailing" secondItem="qsc-k7-BuJ" secondAttribute="trailing" id="UgO-OH-AlT"/>
+                            <constraint firstItem="rxD-J7-KzI" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-137" id="Vpk-Ot-2Rb"/>
+                            <constraint firstItem="1JI-Va-yoS" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-1" id="WL2-Lm-4X0"/>
+                            <constraint firstItem="SL8-LR-Uf5" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="1" id="XZp-vA-5XX"/>
+                            <constraint firstAttribute="bottom" secondItem="qsc-k7-BuJ" secondAttribute="bottom" id="bOk-p8-LdE"/>
+                            <constraint firstItem="y69-ZT-Rqv" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bYP-Ec-xGR"/>
+                            <constraint firstItem="GBn-e4-3cp" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="1" id="eDc-qw-AhU"/>
+                            <constraint firstItem="Puk-BA-cnd" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="eZr-Dl-6ya"/>
+                            <constraint firstItem="GBn-e4-3cp" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="118.5" id="fjz-RW-8Sp"/>
+                            <constraint firstItem="1JI-Va-yoS" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-24.5" id="jFd-8f-SvL"/>
+                            <constraint firstItem="pMk-Pe-aoh" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="mKN-gh-6AU"/>
+                            <constraint firstItem="SL8-LR-Uf5" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="13" id="t4x-er-FKZ"/>
+                            <constraint firstItem="y69-ZT-Rqv" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="83.5" id="yK0-Ct-Rpg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Instrumentation" image="Instrumentation Tab" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="xBz-11-gyw">
+            <objects>
+                <viewController id="fdd-G1-02A" userLabel="Statistics" customClass="StatisticsViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DBt-90-P40"/>
+                        <viewControllerLayoutGuide type="bottom" id="cjF-Md-iSx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GLE-4Z-5hm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Statistics" image="Statistics Tab" id="jEH-Iu-3uf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fsl-gj-Pdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="783"/>
+        </scene>
+        <!--Simulation-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" userLabel="Simulation" customClass="SimulationViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Simulation" image="Simulation Tab" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="fdd-G1-02A" kind="relationship" relationship="viewControllers" id="EbJ-ai-zrM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Instrumentation Tab" width="25" height="25"/>
+        <image name="Simulation Tab" width="25" height="25"/>
+        <image name="Statistics Tab" width="25" height="25"/>
+    </resources>
+</document>
