@@ -2,12 +2,13 @@
 //  GridConfigurationParser.swift
 //  JSONParsingSection
 //
-//  Created by Michelle on 7/28/16.
+//  Created by Michelle.
 //  Copyright © 2016 Michelle. All rights reserved.
 //
 
 import Foundation
 
+//from section 
 
 class GridConfigurationParser
 {

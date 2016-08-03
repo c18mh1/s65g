@@ -2,15 +2,18 @@
 //  GridConfiguration.swift
 //  JSONParsingSection
 //
-//  Created by Michelle on 7/28/16.
+//  Created by Michelle.
 //  Copyright © 2016 Michelle. All rights reserved.
 //
 
 import Foundation
 
+//from section 
 
 struct GridConfiguration
 {
-    let title: String
-    let points: [(Int, Int)]
+    var title: String
+    var points: [(Int, Int)]
+
 }
+

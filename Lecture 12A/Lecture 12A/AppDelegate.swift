@@ -1,12 +1,10 @@
 //
 //  AppDelegate.swift
-//  FinalProject
+//  Lecture 12A
 //
-//  Created by Michelle.
+//  Created by Michelle on 8/1/16.
 //  Copyright © 2016 Michelle. All rights reserved.
 //
-
-//Icons provided by Icons8 www.icons8.com
 
 import UIKit
 
